@@ -252,3 +252,49 @@ console.log("Area of triangle is",result);
 
 
 
+
+//Q4
+
+function mainFunction(marks1,marks2,marks3){
+    var totalMarks = marks1 + marks2 + marks3;
+    var average = Average(marks1,marks2,marks3);
+    console.log(`The average of the marks is ${average}`);
+    var percentage = Percentage(marks1,marks2,marks3);
+    console.log(`The percentage of the student is ${percentage.toFixed(2)}`);
+    return totalMarks;
+}
+mainFunction(+prompt("Enter first subject marks: "),+prompt("Enter second subject marks: "),+prompt("Enter third subject marks: "));
+
+function Average(marks1,marks2,marks3){
+    var noOfSubjects = 3;
+    var averageMarks  = (marks1+marks2+marks3) / noOfSubjects;
+    return averageMarks;
+}
+
+function Percentage(marks1,marks2,marks3){
+    var obtainedMarks = marks1 + marks2 + marks3;
+    var totalMarks = 300;
+    var percentage = (obtainedMarks/totalMarks) * 100;
+    return percentage;
+}
+
+
+
+
+//Q6
+
+function vowelsDelFunc(sentence) {
+    var sentenceLength = sentence.length;
+    var vowelsFreeSen = "";
+
+    for (let i = 0; i < sentenceLength; i++) {
+        let character = sentence[i];
+        if (character !== "a" && character !== "e" && character !== "i" && character !== "o" && character !== "u") {
+            vowelsFreeSen = vowelsFreeSen + character;
+        }
+    }
+
+    console.log("The given sentence without vowels:", vowelsFreeSen);
+}
+
+vowelsDelFunc(prompt("Enter the sentence: ").toLowerCase());
