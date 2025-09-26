@@ -298,3 +298,57 @@ function vowelsDelFunc(sentence) {
 }
 
 vowelsDelFunc(prompt("Enter the sentence: ").toLowerCase());
+
+
+
+
+
+//Q9
+
+var hours = 40;
+var overtimePay = 12;
+function overtimeCalculator(hoursWork,overtimeHours){
+    if(hoursWork > hours){
+        var overtimePayment = overtimePay * overtimeHours;
+        console.log(`The overtime payment of the worker will be ${overtimePayment}`);
+    }
+    else{
+        console.log("worker is not eligible for overtime pay.")
+    }
+}
+overtimeCalculator(+prompt("Enter the hours that employee work: "),+prompt("Enter the overtime hours: "));
+
+
+
+
+
+//Q8
+
+var distance = +prompt("Enter the distance in kilometers: ");
+function meters(distance){
+    var meters = distance * 1000;
+return meters;
+}
+function feets(distance){
+    var feets = distance * 1000 * 3;
+return feets;
+}
+function inches(distance){
+ var inches = distance * 39370;
+ return inches;
+}
+function centimeters(distance){
+ var centimeters = distance * 1000 * 100;
+ return centimeters;
+}
+var meter = meters(distance);
+var feet = feets(distance);
+var inch = inches(distance);
+var centimeter = centimeters(distance);
+console.log(`The ${distance} km is equal to ${meter} meters.`);
+console.log(`The ${distance} km is equal to ${feet} feets.`);
+console.log(`The ${distance} km is equal to ${inch} inches.`);
+console.log(`The ${distance} km is equal to ${centimeter} centimeters.`);
+
+
+
