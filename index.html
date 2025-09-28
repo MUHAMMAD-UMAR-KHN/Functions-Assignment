@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <h1>Q1</h1>
+    <a href="" onclick="clicked()">Click me!</a>
+    <br><br><br>
+    <h1>Q2</h1>
+    <h1 style="color: rgb(183, 183, 229);">Mobile Phone lookup</h1>
+    <br><br><br>
+    <img width="300" src="./iphone.webp" alt="" onclick="phone('Thanks for purchasing iphone')">
+    <img width="300" src="./oppo reno 5.jpg" alt="" onclick="phone('Thanks for purchasing oppo reno 5')">
+    <img width="200" src="./samsung a26.webp" alt="" onclick="phone('Thanks for purchasing samsung a26')">
+    <img width="300" src="./vivo y200.webp" alt="" onclick="phone('Thanks for purchasing vivo y200')">
+    <br><br><br><br>
+    <h1>Q4</h1>
+    <img width="500" src="https://www.jasminetours.com/wp-content/uploads/2023/11/k2-north-face-1024x600.jpg" alt=""
+        onmouseover="src='https://www.eurokidsindia.com/blog/wp-content/uploads/2023/09/exploring-mountains.jpg'"
+        onmouseout="src='https://www.jasminetours.com/wp-content/uploads/2023/11/k2-north-face-1024x600.jpg'">
+        <br><br><br><br>
+        <h1>Q3</h1>
+        <table>
+            <th>
+                <td>Index</td>
+                <td>Name</td>
+                <td>Class</td>
+            </th>
+            <tr>
+                <td>0</td>
+                <td>Ahmed</td>
+                <td>10</td>
+                <td><button onclick="deleteRow()">Delete</button></td>
+            </tr>
+             <tr>
+                <td>1</td>
+                <td>Arham</td>
+                <td>9</td>
+                <td><button onclick="deleteRow()">Delete</button></td>
+            </tr>
+             <tr>
+                <td>2</td>
+                <td>Arbaz</td>
+                <td></td>
+                <td><button onclick="deleteRow()">Delete</button></td>
+            </tr>
+             <tr id="r4">
+                <td>3</td>
+                <td>Arham</td>
+                <td>9</td>
+                <td><button onclick="deleteRow(get)">Delete</button></td>
+            </tr>
+        </table>
     <script src="app.js"></script>
 </body>
 </html>

@@ -352,3 +352,39 @@ console.log(`The ${distance} km is equal to ${centimeter} centimeters.`);
 
 
 
+
+
+
+//------------------------chapter 43 - 48-------------------------------
+
+
+
+//Q1
+
+function clicked(){
+    alert("Clicked")
+}
+
+
+
+
+//Q2
+
+function phone(details){
+    alert(details)
+}
+
+
+
+
+//Q4
+
+function deleteRow(){
+var data = document.getElementById('r4');
+data.innerHTML = "";
+return data;
+}
+
+
+
+
