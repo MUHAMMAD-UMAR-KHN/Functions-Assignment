@@ -379,11 +379,27 @@ function phone(details){
 
 //Q4
 
-function deleteRow(){
+function deleteRow4(){
 var data = document.getElementById('r4');
-data.innerHTML = "";
+data.innerHTML= "";
 return data;
 }
+function deleteRow3(){
+var data = document.getElementById('r3');
+data.innerHTML= "";
+return data;
+}
+function deleteRow2(){
+var data = document.getElementById('r2');
+data.innerHTML= "";
+return data;
+}
+function deleteRow1(){
+var data = document.getElementById('r1');
+data.innerHTML= "";
+return data;
+}
+
 
 
 
